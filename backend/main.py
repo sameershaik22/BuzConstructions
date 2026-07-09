@@ -16,9 +16,14 @@ app = FastAPI(
 )
 
 # CORS — allow frontend
+frontend_url = os.getenv("FRONTEND_URL")
+origins = ["http://localhost:3000", "https://buzconstruction.ca"]
+if frontend_url and frontend_url not in origins:
+    origins.append(frontend_url)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://buzconstruction.ca"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
