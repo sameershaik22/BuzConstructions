@@ -535,32 +535,62 @@ export default function HomePage() {
         @media (max-width: 991px) {
           .hero-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
           .hero-left { align-items: center; }
-          .hero-right { height: 420px; margin-top: 20px; }
-          .frame-1 { width: 260px; height: 320px; top: 10px; left: 10px; }
-          .frame-2 { width: 220px; height: 260px; bottom: 10px; right: 10px; }
-          .frame-3 { width: 140px; height: 140px; top: 30px; right: 20px; }
+          .hero-right { height: 400px; margin-top: 20px; }
+          .hero-trust { justify-content: center; }
+          .frame-1 { width: 240px; height: 290px; top: 10px; left: 30px; }
+          .frame-2 { width: 200px; height: 240px; bottom: 10px; right: 30px; }
+          .frame-3 { width: 130px; height: 130px; top: 20px; right: 20px; }
+          /* Consultation section collapses to single column on tablet */
+          .consultation-grid { grid-template-columns: 1fr !important; }
         }
         @media (max-width: 768px) {
-          .stats-grid { grid-template-columns: repeat(2,1fr); gap: 1px; background: rgba(0,0,0,0.15); }
-          .stat-item { background: var(--accent); border-right: none; border-bottom: 1px solid rgba(0,0,0,0.15); }
-          .services-grid, .portfolio-grid, .blog-grid { grid-template-columns: 1fr; }
+          .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 0; }
+          .stat-item {
+            border-right: none;
+            border-bottom: 1px solid rgba(255,255,255,0.12);
+            padding: 20px 12px;
+          }
+          .stat-item:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.12); }
+          .stat-item:nth-last-child(-n+2) { border-bottom: none; }
+          .stat-num { font-size: 2.6rem; }
+          .services-grid { grid-template-columns: 1fr; }
+          .portfolio-grid { grid-template-columns: 1fr; }
+          .blog-grid { grid-template-columns: 1fr; }
           .service-card.bento-large { grid-column: span 1; }
+          .service-card { min-height: 280px; }
           .why-grid { grid-template-columns: 1fr 1fr; }
           .gr-grid { grid-template-columns: repeat(2, 1fr); }
-          .testimonial-card { padding: 28px; }
-          .testimonial-text { font-size: 1rem; }
+          .testimonial-card { padding: 24px 20px; }
+          .testimonial-text { font-size: 0.95rem; }
+          .testimonial-author { flex-direction: column; align-items: flex-start; gap: 10px; }
           .hero-btns { flex-direction: column; width: 100%; align-items: stretch; }
           .process-grid { grid-template-columns: 1fr; gap: 20px; }
-          .process-showcase { padding: 20px; }
-          .process-showcase-title { font-size: 1.6rem; }
+          .process-showcase { padding: 20px; gap: 20px; }
+          .process-showcase-title { font-size: 1.4rem; }
+          .process-showcase-ctas { flex-direction: column; align-items: stretch; }
+          .process-showcase-ctas .btn { justify-content: center; }
+          /* Consultation grid: 1 column on mobile */
+          .consultation-grid { grid-template-columns: 1fr !important; }
+          .cta-banner { padding: 80px 0; }
+          .cta-banner-title { font-size: clamp(1.6rem, 6vw, 2.4rem); }
+          .cta-banner-sub { font-size: 0.95rem; }
         }
         @media (max-width: 480px) {
           .why-grid { grid-template-columns: 1fr; }
           .gr-grid { grid-template-columns: 1fr; }
-          .hero-right { height: 320px; }
-          .frame-1 { width: 180px; height: 220px; }
-          .frame-2 { width: 150px; height: 180px; }
+          .hero-right { height: 280px; }
+          .frame-1 { width: 165px; height: 200px; top: 5px; left: 10px; }
+          .frame-2 { width: 140px; height: 168px; bottom: 5px; right: 10px; }
           .frame-3 { display: none; }
+          .hero-title { font-size: clamp(2.2rem, 9vw, 3.2rem); }
+          .hero-subtitle { font-size: 0.95rem; }
+          .hero-tag { font-size: 0.7rem; }
+          .stat-num { font-size: 2.2rem; }
+          .stat-label { font-size: 0.75rem; }
+          .section-header { margin-bottom: 32px; }
+          .section { padding: 64px 0; }
+          .gr-grid { grid-template-columns: 1fr; }
+          .cta-banner { padding: 60px 0; }
         }
       `}</style>
 
@@ -779,7 +809,7 @@ export default function HomePage() {
       {/* ── CONSULTATION FORM ─────────────────────────────────────────────── */}
       <section className="section" style={{ padding: '60px 0' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', alignItems: 'stretch' }}>
+          <div className="consultation-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', alignItems: 'stretch' }}>
             <div style={{ background: 'var(--secondary)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 'var(--radius-xl)', padding: '24px', color: 'var(--white)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <span className="section-tag" style={{ background: 'rgba(255,255,255,0.1)', borderColor: 'rgba(255,255,255,0.2)', color: 'var(--white)', padding: '4px 12px', fontSize: '0.75rem', alignSelf: 'flex-start' }}>Get Started</span>
               <h2 style={{ textAlign: 'left', marginTop: '12px', color: '#FCFAF7', fontFamily: 'var(--font-heading)', fontSize: '2rem', fontWeight: 800, lineHeight: 1.2 }}>
@@ -954,13 +984,13 @@ function ProcessSection() {
 
         {/* Step 7 Full-Width Showcase (Before / After Interactive Slider) */}
         <div className="process-showcase">
-          <div className="process-showcase-slider-wrapper">
+          <div className="process-showcase-slider-wrapper" style={{ width: '100%' }}>
             <BeforeAfterSlider 
               beforeImage={resultStep.beforeImg || ''}
               afterImage={resultStep.afterImg || ''}
-              beforeLabel="Before Construction"
-              afterLabel="Finished Luxury Space"
-              height="480px"
+              beforeLabel="Before"
+              afterLabel="After"
+              height="clamp(260px, 50vw, 480px)"
             />
           </div>
           <div className="process-showcase-content">
