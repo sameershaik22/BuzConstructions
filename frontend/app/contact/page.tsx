@@ -71,7 +71,7 @@ export default function ContactPage() {
       `}</style>
 
       <section className="page-hero">
-        <div className="page-hero-bg"><Image src="/images/buz_contact_hero.png" alt="Contact BUZ Construction" fill style={{objectFit:'cover'}}/></div>
+        <div className="page-hero-bg"><Image src="/images/buz_contact_hero.jpg" alt="Contact BUZ Construction" fill style={{objectFit:'cover'}}/></div>
         <div className="custom-hero-overlay"/>
         <div className="container page-hero-content">
           <div style={{display:'flex',alignItems:'center',gap:8,fontSize:'0.8rem',color:'var(--gray-dark)',marginBottom:16}}><Link href="/" style={{color:'var(--accent)',textDecoration:'none'}}>Home</Link> / Contact</div>

@@ -27,7 +27,7 @@ export default function SafetyQualityPage() {
     <>
       <style>{`.page-hero{position:relative;min-height:50vh;display:flex;align-items:center;background:var(--primary);padding-top:var(--nav-height);overflow:hidden;}.page-hero-bg{position:absolute;inset:0;}.page-hero-bg img{width:100%;height:100%;object-fit:cover;opacity:0.25;}.page-hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,22,40,0.97)0%,rgba(10,22,40,0.65)100%);}.page-hero-content{position:relative;z-index:1;padding:80px 0 60px;}.safety-list{display:flex;flex-direction:column;gap:10px;}.safety-item{display:flex;align-items:center;gap:12px;padding:14px 16px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius-md);font-size:0.9rem;color:var(--gray-light);}.ins-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}.ins-card{background:var(--secondary);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius-lg);padding:24px;text-align:center;}.ins-value{font-family:var(--font-heading);font-size:1.5rem;font-weight:800;color:var(--accent);margin-bottom:6px;}.ins-title{font-weight:700;font-size:0.9rem;margin-bottom:6px;}.ins-desc{font-size:0.78rem;color:var(--gray-dark);}.qc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}@media(max-width:1024px){.ins-grid{grid-template-columns:repeat(2,1fr);}.qc-grid{grid-template-columns:repeat(2,1fr);}}@media(max-width:640px){.ins-grid,.qc-grid{grid-template-columns:1fr;}}`}</style>
       <section className="page-hero">
-        <div className="page-hero-bg"><Image src="/images/buz_safety_workers.png" alt="Construction safety" fill style={{objectFit:'cover'}}/></div>
+        <div className="page-hero-bg"><Image src="/images/buz_safety_workers.jpg" alt="Construction safety" fill style={{objectFit:'cover'}}/></div>
         <div className="page-hero-overlay"/>
         <div className="container page-hero-content">
           <div style={{display:'flex',alignItems:'center',gap:8,fontSize:'0.8rem',color:'var(--gray-dark)',marginBottom:16}}><Link href="/" style={{color:'var(--accent)',textDecoration:'none'}}>Home</Link> / Safety & Quality</div>
@@ -45,7 +45,7 @@ export default function SafetyQualityPage() {
           </div>
           <div>
             <div style={{position:'relative',borderRadius:'var(--radius-xl)',overflow:'hidden',aspectRatio:'4/3'}}>
-              <Image src="/images/safety_workers_1781694419859.png" alt="Safety on site" fill style={{objectFit:'cover'}}/>
+              <Image src="/images/safety_workers_1781694419859.jpg" alt="Safety on site" fill style={{objectFit:'cover'}}/>
             </div>
             <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:16,marginTop:20}}>
               {[['🦺','PPE Required','On every site'],['📋','Daily JHSA','Before work starts'],['🏥','First Aid','Certified on site'],['📞','Safety Hotline','24/7 reporting']].map(([icon,title,sub])=>(<div key={title} style={{background:'var(--secondary)',border:'1px solid rgba(255,255,255,0.06)',borderRadius:'var(--radius-md)',padding:'16px',display:'flex',alignItems:'center',gap:12}}><span style={{fontSize:'1.5rem'}}>{icon}</span><div><div style={{fontWeight:700,fontSize:'0.9rem'}}>{title}</div><div style={{fontSize:'0.75rem',color:'var(--gray-dark)'}}>{sub}</div></div></div>))}

@@ -76,7 +76,7 @@ export default function CareersPage() {
       `}</style>
 
       <section className="page-hero">
-        <div className="page-hero-bg"><Image src="/images/buz_careers_hero.png" alt="BUZ Construction careers" fill style={{objectFit:'cover'}}/></div>
+        <div className="page-hero-bg"><Image src="/images/buz_careers_hero.jpg" alt="BUZ Construction careers" fill style={{objectFit:'cover'}}/></div>
         <div className="custom-hero-overlay"/>
         <div className="container page-hero-content">
           <div style={{display:'flex',alignItems:'center',gap:8,fontSize:'0.8rem',color:'var(--gray-dark)',marginBottom:16}}><Link href="/" style={{color:'var(--accent)',textDecoration:'none'}}>Home</Link> / Careers</div>
@@ -91,7 +91,7 @@ export default function CareersPage() {
         <div className="section-header"><span className="section-tag">Why BUZ?</span><h2 className="section-title">Why Work <span>With Us?</span></h2><div className="accent-line"/></div>
         <div className="why-buz-split">
           <div className="why-buz-img">
-            <Image src="/images/buz_interview_office.png" alt="BUZ Construction Interview" fill style={{objectFit: 'cover'}} />
+            <Image src="/images/buz_interview_office.jpg" alt="BUZ Construction Interview" fill style={{objectFit: 'cover'}} />
           </div>
           <div className="why-buz-grid">
             {[['💰','Top-Tier Compensation','Industry-leading salary structures paired with performance bonuses and comprehensive profit sharing.'],['🏥','Comprehensive Benefits','Premium health, dental, and vision coverage alongside extensive wellness and retirement programs.'],['📈','Accelerated Growth','Structured career progression with continuous training, certifications, and leadership development.'],['🤝','Corporate Excellence','An inclusive, high-performance environment built rigidly on mutual respect, site safety, and execution.']].map(([icon,title,desc])=>(

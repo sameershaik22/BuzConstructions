@@ -19,7 +19,7 @@ const cityData: Record<string, {
   toronto: {
     name: 'Toronto',
     region: 'City of Toronto, ON',
-    heroImg: '/images/commercial_office_1781694315339.png',
+    heroImg: '/images/commercial_office_1781694315339.jpg',
     population: '2.9M+',
     tagline: '#1 General Contractor in the GTA',
     about: 'BUZ Construction has been transforming Toronto\'s built environment with superior craftsmanship and reliability. From landmark commercial towers in the Financial District to luxury custom homes in Rosedale and Forest Hill, we know Toronto\'s neighbourhoods, permit offices, and subcontractor network better than anyone.',
@@ -35,7 +35,7 @@ const cityData: Record<string, {
   mississauga: {
     name: 'Mississauga',
     region: 'Peel Region, ON',
-    heroImg: '/images/design_build_1781694386091.png',
+    heroImg: '/images/design_build_1781694386091.jpg',
     population: '750K+',
     tagline: 'Mississauga\'s Leading General Contractor',
     about: 'As our home base, BUZ Construction knows Mississauga inside and out. From Port Credit\'s waterfront redevelopment to Streetsville\'s heritage renovations to the commercial corridors of Hurontario — we have built it all.',
@@ -51,7 +51,7 @@ const cityData: Record<string, {
   brampton: {
     name: 'Brampton',
     region: 'Peel Region, ON',
-    heroImg: '/images/portfolio_commercial_1781694443603.png',
+    heroImg: '/images/portfolio_commercial_1781694443603.jpg',
     population: '660K+',
     tagline: 'Building Brampton\'s Future',
     about: 'Brampton is one of the fastest-growing cities in Canada and BUZ Construction is proud to be part of that growth. From new commercial developments along Queen Street to residential builds in Credit Valley and Springdale, we deliver exceptional results.',
@@ -67,7 +67,7 @@ const cityData: Record<string, {
   oakville: {
     name: 'Oakville',
     region: 'Halton Region, ON',
-    heroImg: '/images/portfolio_residential_1781694457475.png',
+    heroImg: '/images/portfolio_residential_1781694457475.jpg',
     population: '215K+',
     tagline: 'Premium Construction for Oakville\'s Finest',
     about: 'Oakville is synonymous with premium living, and BUZ Construction delivers the premium quality to match. From Old Oakville\'s heritage renovations to luxury custom estates in Morrison and Eastlake to commercial builds along Trafalgar Road.',
@@ -83,7 +83,7 @@ const cityData: Record<string, {
   hamilton: {
     name: 'Hamilton',
     region: 'City of Hamilton, ON',
-    heroImg: '/images/project_management_1781694373963.png',
+    heroImg: '/images/project_management_1781694373963.jpg',
     population: '580K+',
     tagline: 'Industrial & Commercial Excellence in Hamilton',
     about: 'Hamilton\'s renaissance is real and BUZ Construction is part of it. From industrial builds in the Harbour West Industrial Park to the restoration of heritage buildings downtown to custom homes in Ancaster and Dundas, we bring big-city expertise to Hamilton.',

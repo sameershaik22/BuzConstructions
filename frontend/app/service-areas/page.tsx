@@ -13,7 +13,7 @@ const areas = [
     name: 'Toronto',
     slug: 'toronto',
     desc: 'Toronto\'s most trusted general contractor for commercial, residential, and renovation projects across all 44 wards.',
-    img: '/images/buz_commercial_service_area.png',
+    img: '/images/buz_commercial_service_area.jpg',
     projects: 145,
     highlight: 'Downtown Core & East York',
   },
@@ -21,7 +21,7 @@ const areas = [
     name: 'Mississauga',
     slug: 'mississauga',
     desc: 'Full-service construction in Mississauga — our home base. Commercial builds, custom homes, and complete renovations.',
-    img: '/images/buz_luxury_home.png',
+    img: '/images/buz_luxury_home.jpg',
     projects: 120,
     highlight: 'Port Credit & Streetsville',
   },
@@ -29,7 +29,7 @@ const areas = [
     name: 'Brampton',
     slug: 'brampton',
     desc: 'Commercial construction and residential builds for Brampton\'s fastest-growing communities and business districts.',
-    img: '/images/buz_warehouse.png',
+    img: '/images/buz_warehouse.jpg',
     projects: 78,
     highlight: 'Downtown Brampton & Springdale',
   },
@@ -37,7 +37,7 @@ const areas = [
     name: 'Oakville',
     slug: 'oakville',
     desc: 'Premium residential construction, luxury renovations, and commercial builds across Oakville\'s prestigious communities.',
-    img: '/images/buz_townhomes.png',
+    img: '/images/buz_townhomes.jpg',
     projects: 65,
     highlight: 'Old Oakville & Bronte',
   },
@@ -45,7 +45,7 @@ const areas = [
     name: 'Hamilton',
     slug: 'hamilton',
     desc: 'Industrial, commercial, and residential construction serving Hamilton and the surrounding Golden Horseshoe.',
-    img: '/images/buz_careers_carpenter.png',
+    img: '/images/buz_careers_carpenter.jpg',
     projects: 42,
     highlight: 'Hamilton Downtown & Ancaster',
   },
@@ -93,7 +93,7 @@ export default function ServiceAreasPage() {
 
       <section className="page-hero">
         <div className="page-hero-bg">
-          <Image src="/images/buz_service_areas_hero.png" alt="Service areas" fill style={{ objectFit: 'cover' }} />
+          <Image src="/images/buz_service_areas_hero.jpg" alt="Service areas" fill style={{ objectFit: 'cover' }} />
         </div>
         <div className="page-hero-overlay" />
         <div className="container page-hero-content">

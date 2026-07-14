@@ -7,15 +7,15 @@ import { ArrowRight, ExternalLink } from 'lucide-react'
 const categories = ['All', 'Commercial', 'Residential', 'Renovation', 'Project Management', 'Design-Build']
 
 const projects = [
-  { id: 1, title: 'Oakville Corporate Centre', category: 'Commercial', img: '/images/buz_oakville_office.png', location: 'Oakville, ON', year: 2023, sqft: '120,000', desc: '6-storey Class-A office building. Completed on time and 5% under budget.' },
-  { id: 2, title: 'The Meridian Luxury Estate', category: 'Residential', img: '/images/portfolio_residential_1781694457475.png', location: 'Mississauga, ON', year: 2023, sqft: '8,500', desc: 'Custom luxury estate with 6 bedrooms, home theatre, and resort-style pool.' },
-  { id: 3, title: 'Ember & Oak Restaurant', category: 'Renovation', img: '/images/buz_restaurant.png', location: 'Toronto, ON', year: 2024, sqft: '4,200', desc: 'Complete restaurant fit-out including custom millwork and commercial kitchen.' },
-  { id: 4, title: 'Westbrook Industrial Park', category: 'Commercial', img: '/images/buz_warehouse.png', location: 'Brampton, ON', year: 2022, sqft: '200,000', desc: '200,000 sq ft industrial warehouse and distribution centre.' },
-  { id: 5, title: 'Hillcrest Custom Home', category: 'Residential', img: '/images/buz_townhomes.png', location: 'Burlington, ON', year: 2024, sqft: '5,200', desc: 'Modern farmhouse-style custom home with chef\'s kitchen and 3-car garage.' },
-  { id: 6, title: 'Hamilton City Hall Renovation', category: 'Project Management', img: '/images/buz_project_manager.png', location: 'Hamilton, ON', year: 2023, sqft: '40,000', desc: 'Full PM services for heritage building renovation. Zero safety incidents.' },
-  { id: 7, title: 'GreenSpace Medical Clinic', category: 'Design-Build', img: '/images/design_build_1781694386091.png', location: 'Vaughan, ON', year: 2024, sqft: '12,000', desc: 'Design-build delivery from concept to occupancy in just 8 months.' },
-  { id: 8, title: 'Premier Kitchen & Bath Reno', category: 'Renovation', img: '/images/buz_bathroom_reno.png', location: 'Oakville, ON', year: 2024, sqft: '1,800', desc: 'Full kitchen and master bathroom renovation with custom cabinetry.' },
-  { id: 9, title: 'Nexus Office Campus', category: 'Commercial', img: '/images/portfolio_commercial_1781694443603.png', location: 'North York, ON', year: 2022, sqft: '85,000', desc: 'Multi-building tech campus with LEED Gold certification.' },
+  { id: 1, title: 'Oakville Corporate Centre', category: 'Commercial', img: '/images/buz_oakville_office.jpg', location: 'Oakville, ON', year: 2023, sqft: '120,000', desc: '6-storey Class-A office building. Completed on time and 5% under budget.' },
+  { id: 2, title: 'The Meridian Luxury Estate', category: 'Residential', img: '/images/portfolio_residential_1781694457475.jpg', location: 'Mississauga, ON', year: 2023, sqft: '8,500', desc: 'Custom luxury estate with 6 bedrooms, home theatre, and resort-style pool.' },
+  { id: 3, title: 'Ember & Oak Restaurant', category: 'Renovation', img: '/images/buz_restaurant.jpg', location: 'Toronto, ON', year: 2024, sqft: '4,200', desc: 'Complete restaurant fit-out including custom millwork and commercial kitchen.' },
+  { id: 4, title: 'Westbrook Industrial Park', category: 'Commercial', img: '/images/buz_warehouse.jpg', location: 'Brampton, ON', year: 2022, sqft: '200,000', desc: '200,000 sq ft industrial warehouse and distribution centre.' },
+  { id: 5, title: 'Hillcrest Custom Home', category: 'Residential', img: '/images/buz_townhomes.jpg', location: 'Burlington, ON', year: 2024, sqft: '5,200', desc: 'Modern farmhouse-style custom home with chef\'s kitchen and 3-car garage.' },
+  { id: 6, title: 'Hamilton City Hall Renovation', category: 'Project Management', img: '/images/buz_project_manager.jpg', location: 'Hamilton, ON', year: 2023, sqft: '40,000', desc: 'Full PM services for heritage building renovation. Zero safety incidents.' },
+  { id: 7, title: 'GreenSpace Medical Clinic', category: 'Design-Build', img: '/images/design_build_1781694386091.jpg', location: 'Vaughan, ON', year: 2024, sqft: '12,000', desc: 'Design-build delivery from concept to occupancy in just 8 months.' },
+  { id: 8, title: 'Premier Kitchen & Bath Reno', category: 'Renovation', img: '/images/buz_bathroom_reno.jpg', location: 'Oakville, ON', year: 2024, sqft: '1,800', desc: 'Full kitchen and master bathroom renovation with custom cabinetry.' },
+  { id: 9, title: 'Nexus Office Campus', category: 'Commercial', img: '/images/portfolio_commercial_1781694443603.jpg', location: 'North York, ON', year: 2022, sqft: '85,000', desc: 'Multi-building tech campus with LEED Gold certification.' },
 ]
 
 export default function PortfolioPage() {
@@ -70,7 +70,7 @@ export default function PortfolioPage() {
       `}</style>
 
       <section className="page-hero">
-        <div className="page-hero-bg"><Image src="/images/buz_aerial_site.png" alt="BUZ Construction portfolio" fill style={{objectFit:'cover'}}/></div>
+        <div className="page-hero-bg"><Image src="/images/buz_aerial_site.jpg" alt="BUZ Construction portfolio" fill style={{objectFit:'cover'}}/></div>
         <div className="page-hero-overlay"/>
         <div className="container page-hero-content">
           <div style={{display:'flex',alignItems:'center',gap:8,fontSize:'0.8rem',color:'var(--gray-dark)',marginBottom:16}}><Link href="/" style={{color:'var(--accent)',textDecoration:'none'}}>Home</Link> / Portfolio</div>

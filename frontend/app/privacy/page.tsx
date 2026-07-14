@@ -32,7 +32,7 @@ export default function PrivacyPage() {
 
       <section className="page-hero">
         <div className="page-hero-bg">
-          <Image src="/images/buz_about_hero.png" alt="Privacy Policy" fill style={{ objectFit: 'cover' }} />
+          <Image src="/images/buz_about_hero.jpg" alt="Privacy Policy" fill style={{ objectFit: 'cover' }} />
         </div>
         <div className="custom-hero-overlay" />
         <div className="container page-hero-content">

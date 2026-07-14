@@ -32,7 +32,7 @@ export default function CommercialPage() {
         @media(max-width:640px){.sub-card{grid-template-columns:1fr;} .sub-items{grid-template-columns:1fr;}}
       `}</style>
       <section className="page-hero">
-        <div className="page-hero-bg"><Image src="/images/buz_commercial_hero.png" alt="Commercial construction" fill style={{objectFit:'cover'}}/></div>
+        <div className="page-hero-bg"><Image src="/images/buz_commercial_hero.jpg" alt="Commercial construction" fill style={{objectFit:'cover'}}/></div>
         <div className="page-hero-overlay"/>
         <div className="container page-hero-content">
           <div style={{display:'flex',alignItems:'center',gap:8,fontSize:'0.8rem',color:'var(--gray-dark)',marginBottom:16}}>

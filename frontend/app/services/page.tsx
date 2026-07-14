@@ -13,7 +13,7 @@ const services = [
     icon: Building2,
     title: 'Commercial Construction',
     href: '/services/commercial',
-    img: '/images/buz_commercial_office.png',
+    img: '/images/buz_commercial_office.jpg',
     color: '#3B82F6',
     desc: 'Full-scale commercial projects including office buildings, retail stores, restaurants, warehouses, and tenant improvements built to the highest industry standards.',
     items: ['Office Buildings', 'Retail Stores & Plazas', 'Restaurants & Hospitality', 'Warehouses & Industrial', 'Tenant Improvements'],
@@ -22,7 +22,7 @@ const services = [
     icon: Home,
     title: 'Residential Construction',
     href: '/services/residential',
-    img: '/images/buz_luxury_home.png',
+    img: '/images/buz_luxury_home.jpg',
     color: '#22C55E',
     desc: 'Custom homes and residential builds crafted with precision and care — from luxury estates to practical home additions and basement finishing.',
     items: ['Custom Luxury Homes', 'Home Additions', 'Basement Finishing', 'Garage Construction', 'Accessory Dwelling Units'],
@@ -31,7 +31,7 @@ const services = [
     icon: Wrench,
     title: 'Renovations',
     href: '/services/renovations',
-    img: '/images/buz_kitchen_reno.png',
+    img: '/images/buz_kitchen_reno.jpg',
     color: '#F59E0B',
     desc: 'Transform your existing space with expert renovation services. From kitchen and bathroom to whole-home and commercial renovations that wow.',
     items: ['Kitchen Renovations', 'Bathroom Renovations', 'Whole-Home Renovations', 'Commercial Renovations', 'Heritage Restorations'],
@@ -40,7 +40,7 @@ const services = [
     icon: ClipboardList,
     title: 'Project Management',
     href: '/services/project-management',
-    img: '/images/buz_project_manager.png',
+    img: '/images/buz_project_manager.jpg',
     color: '#8B5CF6',
     desc: 'Expert construction project management from pre-construction planning through final closeout — on time, on budget, every single time.',
     items: ['Pre-Construction Planning', 'Schedule Management', 'Budget Control', 'Subcontractor Coordination', 'Progress Reporting'],
@@ -49,7 +49,7 @@ const services = [
     icon: Palette,
     title: 'Design-Build',
     href: '/services/design-build',
-    img: '/images/buz_design_build.png',
+    img: '/images/buz_design_build.jpg',
     color: '#EC4899',
     desc: 'Single-source design-build delivery combining architecture and construction — faster project delivery, cost certainty, and better outcomes.',
     items: ['Concept to Completion', 'Integrated Design Team', 'Single Contract', 'Faster Delivery', 'Cost Savings'],
@@ -223,7 +223,7 @@ export default function ServicesPage() {
       {/* ── Hero ── */}
       <section className="page-hero">
         <div className="page-hero-bg">
-          <Image src="/images/buz_services_hero.png" alt="BUZ Construction services" fill style={{ objectFit: 'cover' }} />
+          <Image src="/images/buz_services_hero.jpg" alt="BUZ Construction services" fill style={{ objectFit: 'cover' }} />
         </div>
         <div className="page-hero-overlay" />
         <div className="container page-hero-content">

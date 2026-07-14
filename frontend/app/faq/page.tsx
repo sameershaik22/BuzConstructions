@@ -198,7 +198,7 @@ export default function FAQPage() {
       {/* Hero */}
       <section className="faq-hero">
         <div className="faq-hero-bg">
-          <Image src="/images/buz_faq_hero.png" alt="FAQ" fill style={{ objectFit: 'cover' }} />
+          <Image src="/images/buz_faq_hero.jpg" alt="FAQ" fill style={{ objectFit: 'cover' }} />
         </div>
         <div className="faq-hero-overlay" />
         <div className="container faq-hero-content">

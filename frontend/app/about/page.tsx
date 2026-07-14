@@ -175,7 +175,7 @@ export default function AboutPage() {
       <section className="page-hero" style={{ background: 'var(--off-white)' }}>
         <div className="container page-hero-container">
           <div className="page-hero-image">
-            <Image src="/images/buz_about_split_hero.png" alt="BUZ Construction office" fill style={{ objectFit: 'cover' }} priority sizes="(max-width: 768px) 100vw, 50vw" />
+            <Image src="/images/buz_about_split_hero.jpg" alt="BUZ Construction office" fill style={{ objectFit: 'cover' }} priority sizes="(max-width: 768px) 100vw, 50vw" />
           </div>
           <div className="page-hero-content">
             <div className="page-hero-breadcrumb" style={{ marginBottom: '24px', fontSize: '0.95rem', fontWeight: 700, color: 'var(--primary)' }}><Link href="/" style={{ color: 'var(--accent)', textDecoration: 'none' }}>Home</Link> <span style={{ opacity: 0.8 }}>/ About Us</span></div>
@@ -273,7 +273,7 @@ export default function AboutPage() {
           </div>
           <div className="team-intro-container">
             <div style={{ position: 'relative', borderRadius: 'var(--radius-lg)', overflow: 'hidden', aspectRatio: '1.6', border: '1px solid rgba(255,255,255,0.06)', minHeight: '260px' }}>
-              <Image src="/images/buz_team_branded.png" alt="BUZ Construction Branded Team" fill style={{ objectFit: 'cover' }} />
+              <Image src="/images/buz_team_branded.jpg" alt="BUZ Construction Branded Team" fill style={{ objectFit: 'cover' }} />
             </div>
             <div>
               <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.8rem', fontWeight: 800, marginBottom: '16px', color: 'var(--white)' }}>

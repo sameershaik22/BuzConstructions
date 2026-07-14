@@ -23,8 +23,8 @@ const articles: Record<string, {
     date: 'October 15, 2024',
     readTime: '6 min read',
     category: 'Industry News',
-    img: '/images/buz_aerial_site.png',
-    actionImg: '/images/buz_crew_action.png',
+    img: '/images/buz_aerial_site.jpg',
+    actionImg: '/images/buz_crew_action.jpg',
     intro: 'The Ontario construction industry is evolving faster than ever. From sustainable building practices to smart technology integration, 2024 is shaping up to be a transformative year for developers, contractors, and property owners alike. Here are the top five trends driving the industry forward.',
     sections: [
       {
@@ -63,8 +63,8 @@ const articles: Record<string, {
     date: 'September 28, 2024',
     readTime: '5 min read',
     category: 'Services',
-    img: '/images/buz_design_build.png',
-    actionImg: '/images/buz_crew_action.png',
+    img: '/images/buz_design_build.jpg',
+    actionImg: '/images/buz_crew_action.jpg',
     intro: 'When it comes to delivering construction projects efficiently, the design-build delivery method has become one of the most popular choices for developers and property owners across Ontario. By combining architecture, design, and construction under a single contract and team, design-build reduces friction, eliminates gaps, and brings projects to completion faster and more cost-effectively than traditional methods.',
     sections: [
       {
@@ -103,8 +103,8 @@ const articles: Record<string, {
     date: 'August 20, 2024',
     readTime: '7 min read',
     category: 'Renovations',
-    img: '/images/buz_kitchen_reno.png',
-    actionImg: '/images/buz_action_kitchen.png',
+    img: '/images/buz_kitchen_reno.jpg',
+    actionImg: '/images/buz_action_kitchen.jpg',
     intro: "A kitchen renovation is one of the most impactful investments a homeowner can make — both for daily quality of life and for long-term property value. Ontario homeowners consistently see strong returns on kitchen upgrades, with mid-range renovations recovering 70–80% of their cost at resale. But without careful planning and budgeting, kitchen renos can quickly spiral beyond expectations. Here is a comprehensive guide to help you plan your kitchen renovation the right way.",
     sections: [
       {
@@ -148,8 +148,8 @@ const articles: Record<string, {
     date: 'September 10, 2024',
     readTime: '7 min read',
     category: 'Commercial',
-    img: '/images/buz_oakville_office.png',
-    actionImg: '/images/buz_action_leed.png',
+    img: '/images/buz_oakville_office.jpg',
+    actionImg: '/images/buz_action_leed.jpg',
     intro: 'LEED (Leadership in Energy and Environmental Design) certification has become one of the most recognized standards for sustainable commercial building design in North America. For Ontario developers and tenants alike, LEED status signals environmental responsibility, operational efficiency, and long-term value. But what does LEED actually involve, and what does it cost to achieve?',
     sections: [
       {
@@ -188,8 +188,8 @@ const articles: Record<string, {
     date: 'August 20, 2024',
     readTime: '10 min read',
     category: 'Residential',
-    img: '/images/buz_luxury_home.png',
-    actionImg: '/images/buz_action_customhome.png',
+    img: '/images/buz_luxury_home.jpg',
+    actionImg: '/images/buz_action_customhome.jpg',
     intro: 'Building a custom home is the most personal construction project most people will ever undertake. Unlike buying a production home where you choose from pre-set floor plans and finishes, a custom home is designed and built specifically for you — your family, your lifestyle, your lot. In Ontario, the custom home building process involves multiple stages, numerous professionals, and critical decisions at every turn. This guide walks you through the entire journey.',
     sections: [
       {
@@ -233,8 +233,8 @@ const articles: Record<string, {
     date: 'July 28, 2024',
     readTime: '5 min read',
     category: 'Safety',
-    img: '/images/buz_project_manager.png',
-    actionImg: '/images/buz_crew_action.png',
+    img: '/images/buz_project_manager.jpg',
+    actionImg: '/images/buz_crew_action.jpg',
     intro: "At BUZ Construction Group Inc., we operate with one non-negotiable principle: every worker who comes to our sites goes home safely. This is not a slogan — it is a cultural commitment that shapes every decision we make, from how we hire and train our crews to how we plan and execute every phase of construction. Here is an inside look at our comprehensive approach to construction site safety.",
     sections: [
       {

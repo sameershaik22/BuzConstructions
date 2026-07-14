@@ -32,7 +32,7 @@ export default function TermsPage() {
 
       <section className="page-hero">
         <div className="page-hero-bg">
-          <Image src="/images/buz_portfolio_hero.png" alt="Terms of Service" fill style={{ objectFit: 'cover' }} />
+          <Image src="/images/buz_portfolio_hero.jpg" alt="Terms of Service" fill style={{ objectFit: 'cover' }} />
         </div>
         <div className="custom-hero-overlay" />
         <div className="container page-hero-content">

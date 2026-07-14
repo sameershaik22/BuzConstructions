@@ -30,7 +30,7 @@ export default function ResidentialPage() {
         @media(max-width:640px){.sub-card{grid-template-columns:1fr;}.sub-items{grid-template-columns:1fr;}}
       `}</style>
       <section className="page-hero">
-        <div className="page-hero-bg"><Image src="/images/residential_luxury_home_1781694338229.png" alt="Residential construction" fill style={{objectFit:'cover'}}/></div>
+        <div className="page-hero-bg"><Image src="/images/residential_luxury_home_1781694338229.jpg" alt="Residential construction" fill style={{objectFit:'cover'}}/></div>
         <div className="page-hero-overlay"/>
         <div className="container page-hero-content">
           <div style={{display:'flex',alignItems:'center',gap:8,fontSize:'0.8rem',color:'var(--gray-dark)',marginBottom:16}}>

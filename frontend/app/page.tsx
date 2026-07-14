@@ -16,11 +16,11 @@ const stats = [
 ]
 
 const services = [
-  { icon: Building2, title: 'Commercial Construction', desc: 'Office buildings, retail stores, warehouses, restaurants, and tenant improvements built to the highest standards.', href: '/services/commercial', img: '/images/buz_commercial_card.png' },
-  { icon: Home, title: 'Residential Construction', desc: 'Custom luxury homes, additions, and basement finishing crafted with precision and care.', href: '/services/residential', img: '/images/buz_luxury_home.png' },
-  { icon: Wrench, title: 'Renovations', desc: 'Kitchen, bathroom, whole-home, and commercial renovations that transform spaces.', href: '/services/renovations', img: '/images/buz_kitchen_reno.png' },
-  { icon: ClipboardList, title: 'Project Management', desc: 'Full-service PM from planning through closeout — on time, on budget, every time.', href: '/services/project-management', img: '/images/buz_project_manager.png' },
-  { icon: Palette, title: 'Design-Build', desc: 'Single-source delivery combining design and construction for faster, cost-efficient results.', href: '/services/design-build', img: '/images/buz_design_build.png' },
+  { icon: Building2, title: 'Commercial Construction', desc: 'Office buildings, retail stores, warehouses, restaurants, and tenant improvements built to the highest standards.', href: '/services/commercial', img: '/images/buz_commercial_card.jpg' },
+  { icon: Home, title: 'Residential Construction', desc: 'Custom luxury homes, additions, and basement finishing crafted with precision and care.', href: '/services/residential', img: '/images/buz_luxury_home.jpg' },
+  { icon: Wrench, title: 'Renovations', desc: 'Kitchen, bathroom, whole-home, and commercial renovations that transform spaces.', href: '/services/renovations', img: '/images/buz_kitchen_reno.jpg' },
+  { icon: ClipboardList, title: 'Project Management', desc: 'Full-service PM from planning through closeout — on time, on budget, every time.', href: '/services/project-management', img: '/images/buz_project_manager.jpg' },
+  { icon: Palette, title: 'Design-Build', desc: 'Single-source delivery combining design and construction for faster, cost-efficient results.', href: '/services/design-build', img: '/images/buz_design_build.jpg' },
 ]
 
 const whyBuz = [
@@ -31,9 +31,9 @@ const whyBuz = [
 ]
 
 const portfolioItems = [
-  { title: 'Oakville Corporate Centre', cat: 'Commercial', img: '/images/buz_oakville_office.png', year: 2023, location: 'Oakville, ON' },
-  { title: 'The Meridian Luxury Estate', cat: 'Residential', img: '/images/portfolio_residential_1781694457475.png', year: 2023, location: 'Mississauga, ON' },
-  { title: 'Ember & Oak Restaurant', cat: 'Renovation', img: '/images/portfolio_restaurant_1781694478723.png', year: 2024, location: 'Toronto, ON' },
+  { title: 'Oakville Corporate Centre', cat: 'Commercial', img: '/images/buz_oakville_office.jpg', year: 2023, location: 'Oakville, ON' },
+  { title: 'The Meridian Luxury Estate', cat: 'Residential', img: '/images/portfolio_residential_1781694457475.jpg', year: 2023, location: 'Mississauga, ON' },
+  { title: 'Ember & Oak Restaurant', cat: 'Renovation', img: '/images/portfolio_restaurant_1781694478723.jpg', year: 2024, location: 'Toronto, ON' },
 ]
 
 const testimonials = [
@@ -51,9 +51,9 @@ const googleReviews = [
 ]
 
 const blogPosts = [
-  { title: 'Top 5 Construction Trends in Ontario for 2024', cat: 'Industry News', img: '/images/buz_aerial_site.png', slug: 'construction-trends-ontario-2024', author: 'Bilal Khan' },
-  { title: 'How Design-Build Saves Time and Money', cat: 'Services', img: '/images/design_build_1781694386091.png', slug: 'design-build-saves-time-money', author: 'Ubaid Khan' },
-  { title: 'Kitchen Renovation Guide: Budget & Planning', cat: 'Renovations', img: '/images/kitchen_renovation_1781694354275.png', slug: 'kitchen-renovation-guide-budget', author: 'Zaidan Anees' },
+  { title: 'Top 5 Construction Trends in Ontario for 2024', cat: 'Industry News', img: '/images/buz_aerial_site.jpg', slug: 'construction-trends-ontario-2024', author: 'Bilal Khan' },
+  { title: 'How Design-Build Saves Time and Money', cat: 'Services', img: '/images/design_build_1781694386091.jpg', slug: 'design-build-saves-time-money', author: 'Ubaid Khan' },
+  { title: 'Kitchen Renovation Guide: Budget & Planning', cat: 'Renovations', img: '/images/kitchen_renovation_1781694354275.jpg', slug: 'kitchen-renovation-guide-budget', author: 'Zaidan Anees' },
 ]
 
 function AnimatedCounter({ end, suffix }: { end: number; suffix: string }) {
@@ -401,7 +401,7 @@ export default function HomePage() {
         }
         .cta-banner::before {
           content: ''; position: absolute; inset: 0;
-          background: url('/images/buz_cta_banner.png') center / cover no-repeat;
+          background: url('/images/buz_cta_banner.jpg') center / cover no-repeat;
           opacity: 0.15;
         }
         .cta-banner-content { position: relative; z-index: 1; }
@@ -627,13 +627,13 @@ export default function HomePage() {
             <div className="hero-right">
               <div className="hero-gallery">
                 <div className="gallery-frame frame-1" style={{ position: 'absolute' }}>
-                  <Image src="/images/buz_hero_site_banner.png" alt="Commercial Build" fill sizes="400px" priority />
+                  <Image src="/images/buz_hero_site_banner.jpg" alt="Commercial Build" fill sizes="400px" priority />
                 </div>
                 <div className="gallery-frame frame-2" style={{ position: 'absolute' }}>
-                  <Image src="/images/buz_luxury_home.png" alt="Luxury Residential" fill sizes="300px" />
+                  <Image src="/images/buz_luxury_home.jpg" alt="Luxury Residential" fill sizes="300px" />
                 </div>
                 <div className="gallery-frame frame-3" style={{ position: 'absolute' }}>
-                  <Image src="/images/buz_kitchen_after.png" alt="Premium Kitchen Remodeling" fill sizes="200px" />
+                  <Image src="/images/buz_kitchen_after.jpg" alt="Premium Kitchen Remodeling" fill sizes="200px" />
                 </div>
               </div>
             </div>
@@ -890,7 +890,7 @@ const processSteps = [
     number: '01',
     title: 'Your Vision',
     desc: 'We meet to discuss your goals, budget, and project roadmap.',
-    img: '/images/buz_design_build.png',
+    img: '/images/buz_design_build.jpg',
     badge: '01 / Consultation',
     deliverables: []
   },
@@ -898,7 +898,7 @@ const processSteps = [
     number: '02',
     title: 'Site Visit',
     desc: 'Our team maps the site details and plans the logistics.',
-    img: '/images/buz_aerial_site.png',
+    img: '/images/buz_aerial_site.jpg',
     badge: '02 / Survey',
     deliverables: []
   },
@@ -906,7 +906,7 @@ const processSteps = [
     number: '03',
     title: 'Design & Permits',
     desc: 'We finalize structural engineering and secure city approvals.',
-    img: '/images/buz_project_manager.png',
+    img: '/images/buz_project_manager.jpg',
     badge: '03 / Planning',
     deliverables: []
   },
@@ -914,7 +914,7 @@ const processSteps = [
     number: '04',
     title: 'Active Construction',
     desc: 'Our expert crews break ground and assemble the core structure.',
-    img: '/images/buz_safety_workers.png',
+    img: '/images/buz_safety_workers.jpg',
     badge: '04 / Structural',
     deliverables: []
   },
@@ -922,7 +922,7 @@ const processSteps = [
     number: '05',
     title: 'Detail & Quality',
     desc: 'Our carpenters and trades verify every detail to ensure perfection.',
-    img: '/images/buz_careers_carpenter.png',
+    img: '/images/buz_careers_carpenter.jpg',
     badge: '05 / Finishes',
     deliverables: []
   },
@@ -930,7 +930,7 @@ const processSteps = [
     number: '06',
     title: 'Key Handover',
     desc: 'We complete the final walkthrough and deliver your keys.',
-    img: '/images/buz_client_handshake.png',
+    img: '/images/buz_client_handshake.jpg',
     badge: '06 / Handover',
     deliverables: []
   },
@@ -938,8 +938,8 @@ const processSteps = [
     number: '07',
     title: 'The Result',
     desc: 'A premium space, built around your vision.',
-    beforeImg: '/images/buz_kitchen_before.png',
-    afterImg: '/images/buz_kitchen_after.png',
+    beforeImg: '/images/buz_kitchen_before.jpg',
+    afterImg: '/images/buz_kitchen_after.jpg',
     badge: '07 / Completed',
     deliverables: []
   }
