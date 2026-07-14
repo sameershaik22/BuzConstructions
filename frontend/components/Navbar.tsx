@@ -253,17 +253,20 @@ export default function Navbar() {
           .nav-links   { display: none; }
           .hamburger   { display: flex; }
           .nav-cta .btn, .nav-cta .nav-estimate-btn { display: none; }
-          /* Switch to flexbox so logo sits far-left and hamburger far-right */
+          /* BUZ logo: far LEFT — hamburger: far RIGHT */
           .nav-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 0;
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            width: 100% !important;
+            gap: 0 !important;
           }
+          .nav-logo  { flex-shrink: 0; }
+          .nav-cta   { flex-shrink: 0; margin-left: auto; }
         }
         @media (max-width: 480px) {
           .nav-logo-text { display: none; }
-          /* Ensure logo icon stays crisp on very small screens */
           .nav-logo-icon { width: 40px; height: 40px; font-size: 1rem; }
         }
       `}</style>
