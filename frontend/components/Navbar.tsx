@@ -253,9 +253,18 @@ export default function Navbar() {
           .nav-links   { display: none; }
           .hamburger   { display: flex; }
           .nav-cta .btn, .nav-cta .nav-estimate-btn { display: none; }
+          /* Switch to flexbox so logo sits far-left and hamburger far-right */
+          .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0;
+          }
         }
         @media (max-width: 480px) {
           .nav-logo-text { display: none; }
+          /* Ensure logo icon stays crisp on very small screens */
+          .nav-logo-icon { width: 40px; height: 40px; font-size: 1rem; }
         }
       `}</style>
 
