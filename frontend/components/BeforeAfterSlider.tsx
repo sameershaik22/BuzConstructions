@@ -13,8 +13,8 @@ interface BeforeAfterSliderProps {
 export default function BeforeAfterSlider({
   beforeImage,
   afterImage,
-  beforeLabel = 'Before Construction',
-  afterLabel = 'Finished Space',
+  beforeLabel = 'Before',
+  afterLabel = 'After',
   height = '500px'
 }: BeforeAfterSliderProps) {
   const [sliderPosition, setSliderPosition] = useState(50)
@@ -38,13 +38,14 @@ export default function BeforeAfterSlider({
     const rect = containerRef.current.getBoundingClientRect()
     const x = clientX - rect.left
     let position = (x / rect.width) * 100
-    if (position < 0) position = 0
-    if (position > 100) position = 100
+    if (position < 2) position = 2
+    if (position > 98) position = 98
     setSliderPosition(position)
   }
 
   const handleTouchMove = (e: TouchEvent) => {
     if (!isDragging) return
+    e.preventDefault()
     handleMove(e.touches[0].clientX)
   }
 
@@ -53,18 +54,15 @@ export default function BeforeAfterSlider({
     handleMove(e.clientX)
   }
 
-  const handleMouseUp = () => {
-    setIsDragging(false)
-  }
+  const handleMouseUp = () => setIsDragging(false)
 
   useEffect(() => {
     if (isDragging) {
       window.addEventListener('mousemove', handleMouseMove)
       window.addEventListener('mouseup', handleMouseUp)
-      window.addEventListener('touchmove', handleTouchMove)
+      window.addEventListener('touchmove', handleTouchMove, { passive: false })
       window.addEventListener('touchend', handleMouseUp)
     }
-
     return () => {
       window.removeEventListener('mousemove', handleMouseMove)
       window.removeEventListener('mouseup', handleMouseUp)
@@ -94,20 +92,19 @@ export default function BeforeAfterSlider({
         }
         .slider-label {
           position: absolute;
-          bottom: 20px;
-          z-index: 10;
-          padding: 6px 14px;
-          background: rgba(var(--primary-rgb), 0.85);
+          bottom: 16px;
+          padding: 5px 14px;
+          background: rgba(var(--primary-rgb), 0.88);
           backdrop-filter: blur(8px);
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.15);
           color: var(--white);
-          font-size: 0.78rem;
+          font-size: 0.75rem;
           font-weight: 700;
           text-transform: uppercase;
-          letter-spacing: 0.1em;
+          letter-spacing: 0.12em;
           border-radius: 50px;
           pointer-events: none;
-          transition: opacity 0.2s;
+          white-space: nowrap;
         }
         .slider-handle-bar {
           position: absolute;
@@ -117,7 +114,8 @@ export default function BeforeAfterSlider({
           background: var(--accent);
           cursor: ew-resize;
           touch-action: none;
-          box-shadow: 0 0 10px rgba(var(--accent-rgb), 0.5);
+          box-shadow: 0 0 12px rgba(var(--accent-rgb), 0.6);
+          z-index: 20;
         }
         .slider-handle-circle {
           position: absolute;
@@ -133,7 +131,7 @@ export default function BeforeAfterSlider({
           display: flex;
           align-items: center;
           justify-content: center;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
           z-index: 30;
           cursor: ew-resize;
           transition: transform 0.1s;
@@ -148,8 +146,8 @@ export default function BeforeAfterSlider({
         }
       `}</style>
 
-      {/* After image (background) */}
-      <div style={{ position: 'absolute', inset: 0 }}>
+      {/* ── LAYER 1 (bottom): After image — full width, z-index auto ── */}
+      <div style={{ position: 'absolute', inset: 0, zIndex: 1 }}>
         <Image
           src={afterImage}
           alt={afterLabel}
@@ -157,12 +155,17 @@ export default function BeforeAfterSlider({
           style={{ objectFit: 'cover' }}
           priority
         />
-        <span className="slider-label" style={{ right: '20px' }}>
+        {/* AFTER label: z-index 2 — BELOW the before-image overlay (z-index 5).
+            When the before-image overlay expands, it correctly covers this label. */}
+        <span
+          className="slider-label"
+          style={{ right: '16px', zIndex: 2 }}
+        >
           {afterLabel}
         </span>
       </div>
 
-      {/* Before image (foreground overlay clipped by width) */}
+      {/* ── LAYER 2 (middle): Before image — clipped overlay, z-index 5 ── */}
       <div
         style={{
           position: 'absolute',
@@ -172,9 +175,10 @@ export default function BeforeAfterSlider({
           right: 0,
           width: `${sliderPosition}%`,
           overflow: 'hidden',
-          zIndex: 5
+          zIndex: 5   // Higher than AFTER label (2) — properly covers it
         }}
       >
+        {/* Inner div expands to full container width so the image doesn't stretch */}
         <div style={{ position: 'absolute', width: containerWidth, height: height }}>
           <Image
             src={beforeImage}
@@ -184,15 +188,19 @@ export default function BeforeAfterSlider({
             priority
           />
         </div>
-        <span className="slider-label" style={{ left: '20px' }}>
+        {/* BEFORE label: inside the clipped div → auto-clips with the image ✅ */}
+        <span
+          className="slider-label"
+          style={{ left: '16px', zIndex: 6 }}
+        >
           {beforeLabel}
         </span>
       </div>
 
-      {/* Drag Bar & Handle */}
+      {/* ── LAYER 3 (top): Drag bar + handle, z-index 20 ── */}
       <div
         className="slider-handle-bar"
-        style={{ left: `${sliderPosition}%` }}
+        style={{ left: `${sliderPosition}%`, zIndex: 20 }}
         onMouseDown={() => setIsDragging(true)}
         onTouchStart={() => setIsDragging(true)}
       >
