@@ -20,7 +20,7 @@ const articles: Record<string, {
   'construction-trends-ontario-2024': {
     title: 'Top 5 Construction Trends in Ontario for 2024',
     author: 'Bilal Khan',
-    date: 'October 15, 2024',
+    date: 'October 15, 2026',
     readTime: '6 min read',
     category: 'Industry News',
     img: '/images/buz_aerial_site.jpg',
@@ -60,7 +60,7 @@ const articles: Record<string, {
   'design-build-saves-time-money': {
     title: 'How Design-Build Saves Time and Money',
     author: 'Sarah Kim',
-    date: 'September 28, 2024',
+    date: 'September 28, 2026',
     readTime: '5 min read',
     category: 'Services',
     img: '/images/buz_design_build.jpg',
@@ -100,7 +100,7 @@ const articles: Record<string, {
   'kitchen-renovation-guide-budget': {
     title: 'Kitchen Renovation Guide: Budget & Planning',
     author: 'Elena Rodriguez',
-    date: 'August 20, 2024',
+    date: 'August 20, 2026',
     readTime: '7 min read',
     category: 'Renovations',
     img: '/images/buz_kitchen_reno.jpg',
@@ -145,7 +145,7 @@ const articles: Record<string, {
   'leed-certification-commercial': {
     title: 'Understanding LEED Certification for Commercial Buildings',
     author: 'James Osei',
-    date: 'September 10, 2024',
+    date: 'September 10, 2026',
     readTime: '7 min read',
     category: 'Commercial',
     img: '/images/buz_oakville_office.jpg',
@@ -185,7 +185,7 @@ const articles: Record<string, {
   'custom-home-building-guide': {
     title: 'Custom Home Building: From Lot Purchase to Move-In',
     author: 'Bilal Khan',
-    date: 'August 20, 2024',
+    date: 'August 20, 2026',
     readTime: '10 min read',
     category: 'Residential',
     img: '/images/buz_luxury_home.jpg',
@@ -230,7 +230,7 @@ const articles: Record<string, {
   'construction-site-safety': {
     title: 'Construction Site Safety: Our Zero-Incident Commitment',
     author: 'Elena Rodriguez',
-    date: 'July 28, 2024',
+    date: 'July 28, 2026',
     readTime: '5 min read',
     category: 'Safety',
     img: '/images/buz_project_manager.jpg',
