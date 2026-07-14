@@ -78,17 +78,16 @@ export default function Navbar() {
           box-shadow: 0 4px 40px rgba(0,0,0,0.35);
         }
         .nav-inner {
-          display: grid;
-          grid-template-columns: 1fr auto 1fr;
+          display: flex;
+          flex-direction: row;
           align-items: center;
           width: 100%;
-          gap: 32px;
         }
-        /* Logo */
+        /* Logo: flex:1 keeps it anchored to the LEFT */
         .nav-logo {
           display: flex; align-items: center; gap: 12px;
           text-decoration: none; flex-shrink: 0;
-          justify-self: start;
+          flex: 1;
         }
         .nav-logo-icon {
           width: 44px; height: 44px;
@@ -182,8 +181,8 @@ export default function Navbar() {
         .chevron-icon { opacity: 0.4; transition: opacity 0.15s; }
         .nav-dropdown-item:hover .chevron-icon { opacity: 1; }
 
-        /* Right CTA */
-        .nav-cta { display: flex; align-items: center; gap: 10px; flex-shrink: 0; justify-self: end; }
+        /* Right CTA: flex:1 + justify-content:flex-end keeps hamburger anchored to the RIGHT */
+        .nav-cta { display: flex; align-items: center; gap: 10px; flex-shrink: 0; flex: 1; justify-content: flex-end; }
         .nav-estimate-btn {
           background: #C6A75E !important;
           color: #FCFAF7 !important;
@@ -253,17 +252,7 @@ export default function Navbar() {
           .nav-links   { display: none; }
           .hamburger   { display: flex; }
           .nav-cta .btn, .nav-cta .nav-estimate-btn { display: none; }
-          /* BUZ logo: far LEFT — hamburger: far RIGHT */
-          .nav-inner {
-            display: flex !important;
-            flex-direction: row !important;
-            justify-content: space-between !important;
-            align-items: center !important;
-            width: 100% !important;
-            gap: 0 !important;
-          }
-          .nav-logo  { flex-shrink: 0; }
-          .nav-cta   { flex-shrink: 0; margin-left: auto; }
+          /* With nav-links hidden: logo (flex:1) left, hamburger (flex:1 justify-end) right — automatic */
         }
         @media (max-width: 480px) {
           .nav-logo-text { display: none; }
