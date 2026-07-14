@@ -255,8 +255,10 @@ export default function Navbar() {
           /* With nav-links hidden: logo (flex:1) left, hamburger (flex:1 justify-end) right — automatic */
         }
         @media (max-width: 480px) {
-          .nav-logo-text { display: none; }
-          .nav-logo-icon { width: 40px; height: 40px; font-size: 1rem; }
+          /* Scale logo down instead of hiding it so it looks perfect on mobile */
+          .nav-logo-icon { width: 34px; height: 34px; font-size: 0.9rem; border-radius: 8px; }
+          .nav-logo-name { font-size: 0.85rem; letter-spacing: 0.04em; }
+          .nav-logo-sub { font-size: 0.5rem; letter-spacing: 0.12em; }
         }
       `}</style>
 
